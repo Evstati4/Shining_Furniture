@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shining Furniture Order</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body style="background-color: #43434d;">
+  
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" box-shadow: 0px 1px 1px #c4c4c4; position: sticky; top:0px;">
+    <a class="" href="2021en.html"><img src="3310fb27096c43d8913d6ed3288e5224.png" alt="logo" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./uzyprojectusen.html" style="padding-left: 40px;padding-right: 40px;">About us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./uzyprojectshopen.html"  style="padding-right: 40px;">Shop</a>
+            </li>
+            <li>
+                <a href="uzyproject.html" class="nav-link"> Български </a>
+            </li>
+            </ul>
+            </div>
+            </nav>
+ <div id="List" class="bg-light" style="margin-left: 15%; margin-right: 15%;">       
+<div style=" padding: 20px;" class="bg-light" id="all">
+   
+    <h1 style="text-align: center;">Your order</h1>
+<form style="font-size: 30px;">
+<label>Method of payment </label> <br><br>
+
+<label for="Broi">In cash</label>
+<input type="radio" id="Broi" name="buy" onclick="fun2()"><br><br>
+<label for="Karta" >With card</label>
+<input type="radio" id="Karta" name="buy" onclick="fun1()"><br>
+<input type="text" placeholder="Your name" style="display: none;" id="kupi1"><br>
+<input type="text" placeholder="The number of your card" style="display: none;"id="kupi2"><br>
+<input type="text" placeholder="The security code" style="display: none;"id="kupi3"><br>
+
+<label>Where would you like to recieve your order</label><br><br>
+<label for="ofis">Our shop</label>
+<input type="radio" id="ofis" name="order" onclick="fun4()"><br><br>
+<label for="adres">Your home</label>
+<input type="radio" id="adres" name="order" onclick="fun3()"><br>
+<input type="text" placeholder="Your address" style="display: none;" id="adres2">
+</form><br> <br>
+
+<button style="text-align: center; background-color:#3c3cf0; margin-left: 45%; margin-right: 45%; width: 10%;" class="btn" onclick="fun5()">
+    order
+</button>
+</div>
+</div>
+
+
+</body>
+<script>
+let c1=0;
+let c2=0;
+let x1=document.getElementById("kupi1")
+let x2=document.getElementById("kupi2")
+let x3=document.getElementById("kupi3")
+let a1=document.getElementById("adres2")
+const fun1=function(){
+switch(c1){
+case 0:
+    x1.style.display="inline"
+    x2.style.display="inline"
+    x3.style.display="inline"
+    c1=1;
+    
+break
+case 1:
+    x1.style.display="none";
+    x2.style.display="none";
+    x3.style.display="none";
+    c1=0;
+    break
+}
+}
+const fun2=function(){
+    switch(c1){
+        case 1:
+    x1.style.display="none";
+    x2.style.display="none";
+    x3.style.display="none";
+    c1=0;
+    break
+    }
+}
+const fun3=function(){
+switch(c2){
+case 1:
+    a1.style.display="none"
+    c2=0;
+    break
+case 0:
+    a1.style.display="inline"
+    c2=1;
+    break
+}
+
+}
+const fun4=function(){
+    switch(c2){
+        case 1:
+    a1.style.display="none";
+    
+    c2=0;
+    break
+    }
+}
+const fun5=function(){
+let f=document.getElementById("all")
+f.style.display="none"
+
+let textnode=document.createElement("div")
+let node=document.createTextNode("The order is successful")
+textnode.appendChild(node)
+document.getElementById("List").appendChild(textnode)
+}
+
+</script>
+
+</html>

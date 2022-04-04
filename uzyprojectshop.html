@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shining Furniture Магазин</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body style="background-color: #43434d; text-align: center;">
+  
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" box-shadow: 0px 1px 1px #c4c4c4; position: sticky; top:0px;">
+    <a class="" href="2021.html"><img src="3310fb27096c43d8913d6ed3288e5224.png" alt="logo" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./uzyprojectus.html" style="padding-left: 40px;padding-right: 40px;">За нас</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./uzyprojectshop.html" style="padding-right: 40px;">Каталог</a>
+            
+            </li>
+            <li>
+              <a href="uzyprojectshopen.html" class="nav-link"> English </a>
+          </li>
+            </ul>
+    </div>
+    </nav>
+<div style="margin-left:15%; margin-right: 15%; padding-bottom: 10px;" class="bg-light">
+
+    <div style="text-align: center;font-size: 25px; box-shadow: 0px 1px 1px #c4c4c4;">
+        <form>
+<label style="font-size: 30px;"> Какви мебели ви трябват</label> <br>
+<label for="bania" style="margin: 60px; margin-right: 0; margin-bottom: 10px; margin-top: 30px;">За баня</label>
+<input type="radio" id="baniabu" name="shop" onclick="fun1()">
+<label for="hol" style="margin: 60px;margin-right: 0;margin-bottom: 10px;margin-top: 30px;">За хол</label>
+<input type="radio" id="holbu" name="shop" onclick="fun2()">
+<label for="spalnia" style="margin: 60px;margin-right: 0;margin-bottom: 10px;margin-top: 30px;">За спалня</label>
+<input type="radio" id="spalniabu" name="shop" onclick="fun3()">
+<label for="kuhnia" style="margin: 60px;margin-right: 0;margin-bottom: 10px;margin-top: 30px;"> За кухня</label>
+<input type="radio" id="kuhniabu" name="shop" onclick="fun4()">
+
+
+
+        </form>
+
+    </div>
+<div style="display: flex; flex-direction: row;" id="Bania">
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Bania1">
+<img src="bania1b.jpg" alt="item">
+<h5>Шкаф за баня</h5>
+<a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(1)">Купи 20.00лв</a>
+
+</div>
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Bania2">
+  <img src="bania2.jpg" alt="item">
+  <h5>Тоалетна</h5>
+  <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(2)" >Купи 25.00лв</a>
+  
+  </div>
+  <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Bania3">
+    <img src="bania3a.jpg" alt="item">
+    <h5>Oгледало</h5>
+    <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(3)">Купи 10.00лв</a>
+    
+    
+    </div>
+
+    <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Bania4">
+      <img src="bania4.jpg" alt="item">
+      <h5>Мивка</h5>
+      <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(4)">Купи 30.00лв</a>
+      
+    </div>
+    </div>
+    
+    
+
+<div style="display: flex;" id="Hol">
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Hol1">
+<img src="hol1.jpg" alt="item">
+<h5>Фотьойл</h5>
+<a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(5)">Купи 15.00лв</a>
+
+</div>
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d;" id="Hol2">
+  <img src="hol2.webp" alt="item">
+  <h5>Столче</h5>
+  <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(6)">Купи 10.00лв</a>
+  
+  </div>
+  <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Hol3">
+    <img src="hol3.jpg" alt="item">
+    <h5>Диван</h5>
+    <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(7)">Купи 50.00лв</a>
+    
+    
+    </div>
+
+    <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Hol4">
+      <img src="hol4.jpg" alt="item">
+      <h5>Масичка</h5>
+      <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(8)">Купи 15.00лв</a>
+      
+    </div>
+    </div>     
+      
+<div style="display: flex;" id="Spalnia">
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Spalnia1">
+<img src="spalnia1.jpg" alt="item">
+<h5>Легло</h5>
+<a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(9)">Купи 150.00лв</a>
+
+</div>
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Spalnia2">
+  <img src="spalnia2a.jpg" alt="item">
+  <h5>Гардероб</h5>
+  <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(10)">Купи 200.00лв</a>
+  
+  </div>
+  <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Spalnia3">
+    <img src="spalnia3.jpg" alt="item">
+    <h5>Нощно шкафче</h5>
+    <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(11)">Купи 30.00лв</a>
+    
+    
+    </div>
+
+    <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Spalnia4">
+      <img src="spalni4.jpg" alt="item">
+      <h5>Шкаф</h5>
+      <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(12)">Купи 50.00лв</a>
+      
+    </div>
+    </div>        
+       
+    
+<div style="display: flex;" id="Kuhnia">
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Kuhnia1">
+<img src="kuhnia1.jpg" alt="item">
+<h5>Маса</h5>
+<a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(13)">Купи 30.00лв</a>
+
+</div>
+<div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Kuhnia2">
+  <img src="kuhnia2.jpg" alt="item">
+  <h5>Стол за кухня</h5>
+  <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(14)">Купи 10.00лв</a>
+  
+  </div>
+  <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Kuhnia3">
+    <img src="kuhnia3.jpg" alt="item">
+    <h5>Стол за кухня</h5>
+    <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(15)">Купи 10.00лв</a>
+    
+    
+    </div>
+
+    <div style="display: flex; flex-direction: column; width: 15%; margin: 5%; text-align: center; border: solid #43434d; " id="Kuhnia4">
+      <img src="kuhnia4.jpg" alt="item">
+      <h5>Шкаф за кухня</h5>
+      <a class="btn" style="background-color: #3c3cf0; width: 50%; align-self: center; margin-top: 10px; margin-bottom: 10px;" onclick="notfunny(16)">Купи 45.00лв</a>
+      
+    </div>
+    </div>    
+    <div id="cart" style="text-align: center;">
+      <h3>Вашата количка</h3>
+      
+      
+      </div>
+      <h3>Вашата цена е</h3><h3 id="money">0лв</h3><br>
+      <a href="./uzyproject.html" class="btn" style="background-color:#3c3cf0 ;">Към заплащане</a>
+    </div>
+
+
+
+
+  </div>
+
+
+</body>
+
+<script>
+let v1=1
+let v2=1
+let v3=1
+let v4=1
+let x1=document.getElementById("Bania")
+let x2=document.getElementById("Hol")
+let x3=document.getElementById("Spalnia")
+let x4=document.getElementById("Kuhnia")
+
+
+let fun1=function(){
+switch(v1){
+case 1:
+x1.style.display="flex"
+x2.style.display="none"
+x3.style.display="none"
+x4.style.display="none"
+v1=0
+v2=1
+v3=1
+v4=1
+break
+
+case 0:
+x1.style.display="flex"
+x2.style.display="flex"
+x3.style.display="flex"
+x4.style.display="flex"
+v1=1
+v2=1
+v3=1
+v4=1
+break
+}
+
+}
+
+let fun2=function(){
+switch(v2){
+case 1:
+x2.style.display="flex"
+x1.style.display="none"
+x3.style.display="none"
+x4.style.display="none"
+v2=0
+v1=1
+v3=1
+v4=1
+break
+
+case 0:
+x2.style.display="flex"
+x1.style.display="flex"
+x3.style.display="flex"
+x4.style.display="flex"
+v2=1
+v1=1
+v3=1
+v4=1
+break
+}
+
+}
+
+let fun3=function(){
+switch(v3){
+case 1:
+x3.style.display="flex"
+x2.style.display="none"
+x1.style.display="none"
+x4.style.display="none"
+v3=0
+v2=1
+v1=1
+v4=1
+break
+
+case 0:
+x1.style.display="flex"
+x2.style.display="flex"
+x3.style.display="flex"
+x4.style.display="flex"
+v3=1
+v2=1
+v1=1
+v4=1
+break
+}
+
+}
+
+let fun4=function(){
+switch(v4){
+case 1:
+x4.style.display="flex"
+x2.style.display="none"
+x3.style.display="none"
+x1.style.display="none"
+v4=0
+v2=1
+v3=1
+v1=1
+break
+
+case 0:
+x1.style.display="flex"
+x2.style.display="flex"
+x3.style.display="flex"
+x4.style.display="flex"
+v4=1
+v2=1
+v3=1
+v1=1
+break
+}
+
+}
+
+
+
+
+
+
+let cena=0
+let con=document.getElementById("money")
+let xd=document.getElementById("cart")
+let notfunny=function(x){
+
+switch(x){
+  case 1:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 шкаф за баня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+20
+con.innerText=cena+"лв"
+break
+case 2:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 тоалетна")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+25
+con.innerText=cena+"лв"
+break
+case 3:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 огледало за баня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+10
+con.innerText=cena+"лв"
+break
+case 4:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Мивка за баня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+30
+con.innerText=cena+"лв"
+break
+case 5:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Фотьойл за хол")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+15
+con.innerText=cena+"лв"
+break
+case 6:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Столче за хол")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+10
+con.innerText=cena+"лв"
+break
+case 7:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Диван за хол")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+50
+con.innerText=cena+"лв"
+break
+case 8:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 масичка за хол")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+15
+con.innerText=cena+"лв"
+break
+case 9:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Легло за спалня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+150
+con.innerText=cena+"лв"
+break
+case 10:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Гардероб за спалня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+200
+con.innerText=cena+"лв"
+break
+case 11:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Нощно шкафче за спалня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+30
+con.innerText=cena+"лв"
+break
+case 12:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Шкаф за спалня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+50
+con.innerText=cena+"лв"
+break
+case 13:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Маса за кухня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+30
+con.innerText=cena+"лв"
+break
+case 14:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Стол за кухня(бял)")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+10
+con.innerText=cena+"лв"
+break
+case 15:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Стол за кухня(черен)")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+10
+con.innerText=cena+"лв"
+break
+case 16:
+  var para = document.createElement("h4")
+var node = document.createTextNode("1 Шкав за кухня")
+var br=document.createElement("br")
+para.appendChild(node)
+xd.appendChild(para)
+xd.appendChild(br)
+cena=cena+45
+con.innerText=cena+"лв"
+break
+}
+
+
+
+
+
+
+
+
+}
+
+</script>
+</html>
